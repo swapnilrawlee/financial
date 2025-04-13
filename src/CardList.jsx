@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = ({ title, description, icon }) => (
-  <div className="bg-white rounded-xl shadow-md p-6 w-72 flex flex-col items-center text-center hover:shadow-xl transition">
+  <div className=" rounded-xl shadow-md p-6 w-72 mt-4 flex flex-col items-center text-center  hover:shadow-xl transition">
     <div className="text-4xl mb-4">{icon}</div>
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
     <p className="text-gray-600 text-sm">{description}</p>

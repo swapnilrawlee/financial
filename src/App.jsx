@@ -6,16 +6,16 @@ const App = () => {
   return (
     <div className="w-screen h-screen overflow-x-hidden">
 <header className="bg-gray-900 text-white py-5 shadow-md">
-  <div className="container mx-auto px-6 flex items-center justify-between">
+  <div className="container mx-auto md:px-6 px-2 flex items-center justify-between">
     {/* Logo / Title */}
-    <div className="flex items-center gap-2 text-2xl font-bold tracking-wide">
+    <div className="flex items-center gap-2 md:text-2xl  font-bold tracking-wide">
       <span className="text-yellow-400">⚡</span>
       <h1>Kwiss</h1>
     </div>
 
     {/* Navigation */}
     <nav>
-      <ul className="flex gap-6 text-lg font-medium">
+      <ul className="flex md:gap-6 gap-2 md:text-lg font-medium">
         <li className="hover:text-yellow-400 transition cursor-pointer">Home</li>
         <li className="hover:text-yellow-400 transition cursor-pointer">Blog</li>
         <li className="hover:text-yellow-400 transition cursor-pointer">About</li>
@@ -23,7 +23,7 @@ const App = () => {
     </nav>
 
     {/* CTA Button */}
-    <button className="bg-yellow-400 text-black font-semibold px-4 py-2 rounded hover:bg-yellow-300 transition">
+    <button className="bg-yellow-400 text-black font-semibold md:px-4 md:py-2 px-2 rounded hover:bg-yellow-300 transition">
       Join Now
     </button>
   </div>
@@ -40,10 +40,10 @@ const App = () => {
           <div className="absolute inset-0 bg-black opacity-60"></div>
 
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-            <h1 className="text-white text-5xl md:text-7xl capitalize font-bold mb-6">
+            <h1 className="text-white text-3xl md:text-7xl capitalize font-bold mb-6">
               financial focus and learning
             </h1>
-            <h2 className="text-white text-lg md:text-xl max-w-2xl mb-8">
+            <h2 className="text-white text-xs md:text-xl max-w-2xl mb-8">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quibusdam facere tenetur, beatae nihil deserunt non recusandae
               enim asperiores voluptatum veritatis minus.
@@ -59,10 +59,10 @@ const App = () => {
           </div>
         </div>
       </section>
-      <section className="bg-white rounded-3xl p-6 max-w-6xl mx-auto -mt-24 shadow-lg relative z-10">
+      <section className="bg-white rounded-3xl p-6 max-w-6xl mx-auto -mt-24  shadow-lg relative z-10">
   <CardList />
 </section>
-<section className="mt-32 md:ml-[10%] px-6 md:px-16  flex items-center justify-evenly ">
+<section className="mt-32 md:ml-[10%] px-6 md:px-16  flex flex-col md:flex-row items-center justify-evenly ">
   <div className="text-center mb-10 ">
     <h2 className="text-4xl font-bold mb-4">About Our Company</h2>
     <p className="text-gray-600 max-w-2xl mx-auto">
@@ -94,7 +94,7 @@ const App = () => {
 <section className="py-20 bg-gray-100 mt-22">
   <div className="text-center mb-12">
     <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
-    <p className="text-gray-600 max-w-2xl mx-auto">
+    <p className="text-gray-600 text-sm px-4 md:px-0 md:text-lg max-w-2xl mx-auto">
       We offer a variety of services to help you manage your finances. Explore our expertise in investment, tax planning, budgeting, and more.
     </p>
   </div>
@@ -135,7 +135,7 @@ const App = () => {
     <div className="bg-white p-8 rounded-lg shadow-lg w-72 hover:shadow-2xl transition-all duration-300">
       <div className="text-4xl mb-4 text-red-400">🔒</div>
       <h3 className="text-xl font-semibold mb-3">Financial Security</h3>
-      <p className="text-gray-600">
+      <p className="text-gray-600 ">
         Protect your future with solid financial planning and security.
       </p>
       <button className="mt-4 text-blue-500 hover:underline">Read More</button>
@@ -235,7 +235,7 @@ const App = () => {
 <section className="py-20 bg-gray-50">
   <div className="text-center mb-12">
     <h2 className="text-4xl font-extrabold text-gray-800 mb-4">Have Any Questions?</h2>
-    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+    <p className=" text-gray-600 max-w-2xl mx-auto text-sm px-4 md:px-0 md:text-lg">
       We are here to help! Fill out the form below to send us your inquiry, and we’ll get back to you soon.
     </p>
   </div>
