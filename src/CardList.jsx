@@ -1,29 +1,36 @@
 import React from "react";
 
-const Card = ({ title, description, icon }) => (
-  <div className=" rounded-xl shadow-md p-6 w-72 mt-4 flex flex-col items-center text-center  hover:shadow-xl transition">
+const Card = ({ title, description, icon, numbers, color }) => (
+  <div className={`rounded-xl shadow-md p-6 w-72 mt-4 flex flex-col items-center text-center hover:shadow-xl transition ${color}`}>
     <div className="text-4xl mb-4">{icon}</div>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600 text-sm">{description}</p>
+    <h3 className="text-xl font-semibold mb-2 capitalize">{title}</h3>
+    <h3 className="text-xl text-green-800 font-semibold mb-2 capitalize">{numbers}</h3>
+    <p className="text-sm">{description}</p>
   </div>
 );
 
 const CardList = () => {
   const cards = [
     {
-      title: "Investment Tips",
-      description: "Learn how to grow your wealth with smart investments.",
+      title: "AUM",
+      description: "Understand Assets Under Management and how it reflects your financial advisor's credibility.",
       icon: "💰",
+      color: "bg-yellow-100 text-yellow-800",
+      numbers: "₹10 Cr",
     },
     {
-      title: "Budget Planning",
-      description: "Master the art of managing monthly expenses effectively.",
+      title: "Average returns",
+      description: "Track and analyze your investment returns to make informed financial decisions.",
       icon: "📊",
+      color: "bg-blue-100 text-blue-800",
+      numbers: "12% p.a.",
     },
     {
-      title: "Tax Advice",
-      description: "Stay updated with the latest tax-saving techniques.",
+      title: "Happy Clients",
+      description: "Discover how personalized financial strategies lead to satisfied and loyal clients.",
       icon: "🧾",
+      color: "bg-green-100 text-green-800",
+      numbers: "150+",
     },
   ];
 
